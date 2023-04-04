@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kareemazzam.de/static/css/main.e89ba209.css",
+    "main.js": "/kareemazzam.de/static/js/main.58171edd.js",
+    "index.html": "/kareemazzam.de/index.html",
+    "main.e89ba209.css.map": "/kareemazzam.de/static/css/main.e89ba209.css.map",
+    "main.58171edd.js.map": "/kareemazzam.de/static/js/main.58171edd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e89ba209.css",
+    "static/js/main.58171edd.js"
+  ]
+}

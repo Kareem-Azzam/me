@@ -1,7 +1,7 @@
 {
-  "name": "kareem",
+  "name": "kareemazzam",
   "version": "0.1.0",
-  "homepage": "kareemazzam.de",
+  "homepage": "https://kareemazzam.de",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

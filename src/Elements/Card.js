@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ title, desc, tags }) {
   return (
-    <div className="mb-4 break-inside p-6 rounded-xl bg-blue-900/10 backdrop-blur-sm flex flex-col bg-clip-border shadow-[0px_1px_8px_0px_rgba(0,0,0,0.3)] shadow-blue-600/70 ">
+    <div className="mb-4 break-inside p-6 rounded-lg bg-blue-900/10 backdrop-blur-sm flex flex-col bg-clip-border shadow-[0px_1px_8px_0px_rgba(0,0,0,0.3)] shadow-blue-600/70 ">
       <h2 className="text-2xl font-extrabold dark:text-white break-words text-center">
         {title}
       </h2>

@@ -17,6 +17,7 @@ body {
   background-size: cover;
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: 'Space Mono', monospace; */
+  @apply bg-white dark:bg-darkBlue
 }
 
 .-mb-5px {
@@ -39,6 +40,19 @@ body {
   break-inside: avoid;
 }
 
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  @apply bg-darkBlue
+}
+ 
+body::-webkit-scrollbar-thumb {
+  @apply bg-blue-400 rounded-full
+}
+
 .person {
   height: 25px;
   /*width: 100%;
@@ -46,24 +60,25 @@ body {
   -webkit-animation: PersonMoving 3s infinite normal ease-in-out forwards;
 }
 
+.person .body{
+  position: relative;
+  height: 40%;
+  width: 80%;
+}
+
 .personFace {
-  background-color: black;
+  background-color: white;
   border-radius: 100%;
   width: 10px;
   height: 10px;
   animation: upDown 1s infinite normal ease-in-out forwards;
 }
 
-.body {
-  position: relative;
-  height: 40%;
-  width: 80%;
-}
 
 .overBody {
   z-index: 1;
   position: relative;
-  background-color: #303030;
+  background-color: white;
   width: 100%;
   height: 100%;
   animation: upDown 1s infinite normal ease-in-out forwards;
@@ -82,14 +97,14 @@ body {
 .rightArm {
   z-index: 4;
   animation: walkRight 1s infinite normal ease-in-out forwards;
-  background-color: black;
+  background-color: white;
 }
 
 .leftArm {
   z-index: 0;
   border-color: green;
   animation: walkLef 1s infinite normal ease-in-out forwards;
-  background-color: #242424;
+  background-color: rgb(199, 199, 199);
 }
 
 .LeftLeg,
@@ -104,13 +119,13 @@ body {
 
 .LeftLeg {
   animation: legLeft 1s infinite normal ease-in-out forwards;
-  background-color: #242424;
+  background-color: rgb(199, 199, 199);
 }
 
 .RightLeg {
   animation: legRight 1s infinite normal ease-in-out forwards;
   z-index: 3;
-  background-color: black;
+  background-color: white;
 }
 
 .LowerLegLeft,
@@ -127,12 +142,12 @@ body {
 
 .LowerLegLeft {
   animation: lowerWalkLeft 1s infinite normal ease-in-out forwards;
-  background-color: #242424;
+  background-color: rgb(199, 199, 199);
 }
 
 .LowerLegRight {
   animation: lowerWalkRight 1s infinite normal ease-in-out forwards;
-  background-color: black;
+  background-color: white;
   -webkit-animation: lowerWalkRight 1s infinite normal ease-in-out forwards;
 }
 

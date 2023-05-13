@@ -6,8 +6,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <header>
-      <nav className="flex flex-wrap items-center justify-between w-full  py-2.5  text-lg bg-white absolute border-b border-gray-200">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
+      <nav className="flex flex-wrap items-center justify-between w-full bg-white dark:bg-blue-900/5 py-2.5  text-lg absolut">
+        <div className="container flex flex-wrap items-center justify-between mx-auto ">
           <div>
             <NavLink to={"/"} className="flex items-center hover:text-blue-500">
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-typeFont">

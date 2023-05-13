@@ -88,21 +88,21 @@ const Experiences = () => {
   ];
 
   return (
-    <div className="bg-primaryBG py-2.5 w-full border-b border-gray-200">
+    <div className="bg-white dark:bg-darkBlue py-2.5 w-full border-b  border-blue-900/30">
       <div className="py-28 container mx-auto flex flex-col lg:flex-row gap-10">
         <div className="basis-1/2 text-left">
           <div className="sticky top-0">
-            <p className="mb-4 text-base bg-blue-200 font-bold inline-block p-2 rounded-xl">
+            <p className="mb-4 text-base dark:bg-blue-900/50 dark:text-gray-200 font-bold inline-block p-2 rounded-xl">
               Berufserfahrung
             </p>
-            <h2 className="mb-4 text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900">
+            <h2 className="mb-4 text-4xl md:text-6xl font-extrabold tracking-tight  ">
               Praxiserfahrung während der Studienzeit
             </h2>
-            <PrimaryButton
+            {/* <PrimaryButton
               text={"Projekte Anschauen"}
               to={"projects"}
               typ="dark"
-            />
+            /> */}
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const Experiences = () => {
               );
             })}
             <li className="mb-24 ml-8">
-              <span className="absolute overflow-hidden flex items-center justify-center w-10 h-10 border-blue-500 bg-primaryBG  border-b-4 -left-5 dark:ring-gray-900 dark:bg-green-900">
+              <span className="absolute overflow-hidden flex items-center justify-center w-10 h-10 border-blue-500 bg-white dark:bg-darkBlue  border-b-4 -left-5 dark:ring-gray-900 ">
                 <div className="person">
                   <div className="personFace"></div>
                   <div className="body">
@@ -153,8 +153,8 @@ const Experiences = () => {
             </li>
             {Goals.map((ex, i) => {
               return (
-                <li key={i.title} className="mb-24 ml-8">
-                  <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                <li key={i} className="mb-24 ml-8">
+                  <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
                     <FontAwesomeIcon
                       icon={faCheck}
                       className="text-gray-500 dark:text-green-400"
